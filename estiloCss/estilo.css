@@ -50,11 +50,12 @@ body{
 /* Barra de navegacion */
 
 ul {
-
+    margin: 0;
     width: 100%;
+    padding: 0;
     list-style-type: none;
     text-align: center;
-    background-color: black;
+    background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);;
     display: flex;
     justify-content: space-evenly;
     
@@ -79,11 +80,12 @@ a{
     text-decoration: none;
     display: block;
     color:white
+
 }
 a:hover{
     color: red;
     display: block;
-    font-weight: bold;
+  
 }
 .ul{
     list-style: none;
@@ -227,13 +229,15 @@ main section .fondoNegro{
 /*Foto Banda*/
 
 .fondoBanda{
-        background-image: url(../media/banners/fondoBanda2.jpg);
-        width: 100%;
-        
+        background-image: url(../estiloCss/fondoBanda3.jpg);
+        width: 100%; 
         background-repeat:no-repeat; 
         background-size: cover;
         background-attachment: fixed;
+        background-position-x: center;
         color: white;
+        text-align: center;
+        padding: 20px;
         
 }
 .containerFotoBanda{
@@ -245,6 +249,11 @@ main section .fondoNegro{
     width: 100%;
     height: 400px;
 }
+.animate__fadeInDown{
+    font-weight: 700;
+
+}
+
 .banda{
     
     padding: 5px;
@@ -269,7 +278,35 @@ main section .fondoNegro{
 
 }
 
+/* Html En vivo */
 
+.fondoEnVivo{
+    background-image: url(./fondoEnvivo1.jpg);
+    color: white;
+}
+.grid-container-envivo{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 20px;
+    padding: 20px;
+  
+}
+.grid-container-envivo img{
+    width: 250px;
+    height: 250px;
+}
+.grid-item-envivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s;  
+
+}
+.grid-item-envivo:hover {
+    transform: scale(1.5);
+    border: solid gray 2px;
+  }
 
 /* media queris index */
 
