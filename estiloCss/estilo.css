@@ -48,11 +48,13 @@ body{
 }
 
 /* Barra de navegacion */
-
-ul {
-    margin: 0;
-    width: 100%;
+.container-fluid{
     padding: 0;
+}
+.navbar-nav{
+    margin: 0;
+    padding:0;
+    width: 100%;
     list-style-type: none;
     text-align: center;
     background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);;
@@ -60,12 +62,13 @@ ul {
     justify-content: space-evenly;
     
 }
-li {
+
+.li {
     display: inline-block;
     position: relative;
     font-size: 20px;
-    padding: 5px;
-    width: 150px;
+    padding: 0;
+    width: 100%;
     
 }
 ul ul{
@@ -76,14 +79,15 @@ ul ul li{
     display: block;
 }
 
-a{
+.nav-item a{
     text-decoration: none;
     display: block;
     color:white
 
 }
-a:hover{
+.nav-item a:hover{
     color: red;
+    background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);;
     display: block;
   
 }
@@ -91,6 +95,7 @@ a:hover{
     list-style: none;
     position: absolute;
     display: block;
+    
 }
 ul li:hover ul{
     
