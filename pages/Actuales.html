@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estiloCss/estilo.css">
     <link rel="shortcut icon" href="../media/banners/favicon-32x32.png" type="image/x-icon">
 
@@ -14,40 +16,59 @@
 
         <img class="headerImg" src="../media/banners/banner_miembros_actuales.png" alt="bannerMiembrosActuales">
 
-        <nav>
-            <ul>
-                <li><a href="../index.html"><img src="../media/banners/home-5-24.ico" alt="Home"></a></li>
+        <nav class="navbar navbar-expand-lg p-0 ">
 
-                <li><a href="../pages/Historia.html" target="_blank">Historia</a></li>
-                
-                <li><a href="">Miembros</a>
-                    <ul>
-                         <li><a href="../pages/Actuales.html" target="_blank">Actuales</a></li>
-                         <li><a href="../pages/Exmiembros.html" target="_blank">Ex miembros</a>
-                        </li>         
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Historia.html" target="_blank">Historia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Miembros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./Actuales.html" target="_blank">Actuales</a></li>
+                    <li><a class="dropdown-item" href="./Exmiembros.html" target="_blank">Ex miembros</a></li>
+                 </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Discografia.html" target="_blank">Discografia</a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Fotos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./Banda.html" target="_blank">Banda</a></li>
+                      <li><a class="dropdown-item" href="./Envivo.html" target="_blank">En vivo</a></li>
                     </ul>
-                </li>    
-                
-                <li><a href="../pages/Discografia.html" target="_blank">Discografía</a></li>
-        
-                <li><a href="">Fotos</a>
-                    <ul>
-                        <li><a href="../pages/Banda.html" target="_blank">Banda</a></li>
-                        <li><a href="../pages/Envivo.html" target="_blank">En vivo</a></li>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Videos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./Oficial.html" target="_blank">Oficial</a></li>
+                      <li><a class="dropdown-item" href="./Live.html" target="_blank">Live</a></li>
                     </ul>
-                    
-                </li>
-                <li><a href="">Videos</a>
-                    <ul>
-                        <li><a href="../pages/Oficial.html" target="_blank">Oficial</a></li>
-                    
-                        <li><a href="../pages/Live.html" target="_blank">Live</a></li>
-                    </ul>
-                
-                </li>
-                <li><a href="../pages/Frases.html" target="_blank">Frases</a></li>
-            </ul>
-            </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Frases.html" target="_blank">Frases</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
         
               </header>
 
@@ -151,6 +172,6 @@
 
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
