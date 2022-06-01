@@ -239,7 +239,7 @@ main section .fondoNegro{
 /*Foto Banda*/
 
 .fondoBanda{
-        background-image: url(../estiloCss/fondoBanda3.jpg);
+        background-image: url(../media/banners/fondoBanda3.jpg);
         width: 100%; 
         background-repeat:no-repeat; 
         background-size: cover;
@@ -291,7 +291,7 @@ main section .fondoNegro{
 /* Html En vivo */
 
 .fondoEnVivo{
-    background-image: url(./fondoEnvivo1.jpg);
+    background-image: url(../media/banners/fondoEnvivo1.jpg);
     color: white;
 }
 .grid-container-envivo{
