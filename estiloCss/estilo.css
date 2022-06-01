@@ -57,6 +57,7 @@ body{
     width: 100%;
     list-style-type: none;
     text-align: center;
+    align-items: center;
     background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);;
     display: flex;
     justify-content: space-evenly;
@@ -87,7 +88,7 @@ ul ul li{
 }
 .nav-item a:hover{
     color: red;
-    background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);;
+    background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);
     display: block;
   
 }
@@ -109,9 +110,13 @@ footer{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: white;
     text-align: center;
-    padding: 10px;
+    
+
+  
+    
+ 
 
 }
 .titulo{
@@ -213,7 +218,7 @@ main section .fondoNegro{
 
 .setlist .card{
     width: 330px;
-    height: 570px;
+    height: auto;
     border-radius: 8px;
     margin: 20px;
     text-align: center;
