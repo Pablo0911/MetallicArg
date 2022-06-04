@@ -12,37 +12,42 @@ body{
    
      display: grid;
      grid-template-areas: 
-     "headerIndex "
+     "header "
      "navBar"
-     "mainIndex"
-     "footerIndex";
+     "main"
+     "footer";
  
 }
 
-.headerIndex{
-         grid-area: headerIndex;
+header{
+         grid-area: header;
          align-items: center;
          width: 100%;
 }
 
-
-.footerIndex{
-    grid-area: footerIndex;
-}
-.mainIndex{
-    grid-area: mainIndex;
+main{
+    grid-area: main;
     background-image: url(../media/banners/metallicaFondoIndex.jpg);
     height: 100vh;
     width: 100%; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: white;
+    text-align: center;
    
 }
+
 .headerImg{
-                width: 100%;
-                height: 350px;
+                width: 100%; 
                 display: block;
                 grid-area: header;
 }
@@ -105,20 +110,7 @@ ul li:hover ul{
 
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    background-color: white;
-    text-align: center;
-    
 
-  
-    
- 
-
-}
 .titulo{
         text-align: center;
         padding: 10px;
@@ -167,6 +159,7 @@ main section .fondoNegro{
              flex-direction: row;
              flex-wrap: wrap;
              justify-content: space-between;
+             padding: 20px;
              
 }
 .miembrosJpg:hover{
@@ -199,8 +192,11 @@ main section .fondoNegro{
 
 .mainDiscografia{
     background-image: url(../media/banners/fondoDiscografia.jpg);
+    background-position: center;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    height: auto;
   
 }
         
@@ -212,18 +208,20 @@ main section .fondoNegro{
          flex-wrap: wrap;
          justify-content: center;
          margin: auto;
-         padding: 50px;
+        
         
          }
 
 .setlist .card{
     width: 330px;
-    height: auto;
+    height: 430px;
     border-radius: 8px;
     margin: 20px;
     text-align: center;
     background-color: white;
+    overflow-x: hidden;
     transition: all 0.25s;
+    
 }
 
 .setlist .card:hover{
@@ -241,6 +239,7 @@ main section .fondoNegro{
 .fondoBanda{
         background-image: url(../media/banners/fondoBanda3.jpg);
         width: 100%; 
+        height: auto;
         background-repeat:no-repeat; 
         background-size: cover;
         background-attachment: fixed;
@@ -291,7 +290,11 @@ main section .fondoNegro{
 /* Html En vivo */
 
 .fondoEnVivo{
+    height: 100%;
     background-image: url(../media/banners/fondoEnvivo1.jpg);
+    background-size: cover;
+    
+
     color: white;
 }
 .grid-container-envivo{
@@ -303,6 +306,7 @@ main section .fondoNegro{
   
 }
 .grid-container-envivo img{
+   
     width: 250px;
     height: 250px;
 }
@@ -320,64 +324,69 @@ main section .fondoNegro{
 
 /* media queris index */
 
-/* max-width: 768px */
+/* max-width: 576px */
 
-@media (max-width:768px) {
+@media screen and (max-width:576px) {
     
-    body{ 
+    body { 
              
             display: grid;
             grid-template-areas: 
-            "headerIndex"
+            "header"
             "navBar"
-            "mainIndex"
-            "footerIndex";
+            "main"
+            "footer";
             justify-content: end;
-            height: 768px;
+           
        
     }
     .headerImg{
-               width: 768px;
-               height: 150px;
-               display: block;
-            }
-     .navBar{
-         width: 768px;
-     }
-     .mainIndex{
-     height: 110vh;
-     background-image: url(../media/banners/fondo600px.jpg);
+               height: auto;
+    }
+    
+     main {
+     
+     background-image: url(../media/banners/metallicaFondoIndex.jpg);
+     width: 100%;
      background-position: center;
      background-size: cover;
      
     }
-    .mainIndex .musica{
+    main .musica{
         display: none;
+    }
+    .parrafoMiembros{
+        text-align: center;
+    }
+    .fondoBanda {
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
     }
     
     }
 
-    /* Media querys Banda.html */
+   
+        
 
-    @media (max-width:768px){
 
-        body{ 
-             
-            display: grid;
-            grid-template-areas: 
-            "headerIndex"
-            "navBar"
-            "mainIndex"
-            "footerIndex";
-            justify-content: end;
-            height: 768px;
-        }
 
-        .headerImg{
-            
-                width: 150px ;
-                height: 150px;
-                display: block;
-                
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+   
