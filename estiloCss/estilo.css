@@ -27,12 +27,8 @@ header{
 
 main{
     grid-area: main;
-    background-image: url(../media/banners/metallicaFondoIndex.jpg);
-    height: 100vh;
-    width: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  
+    height: auto;
+    width: 100%;   
 }
 
 footer{
@@ -43,13 +39,20 @@ footer{
     justify-content: space-evenly;
     background-color: white;
     text-align: center;
-   
+    
 }
 
 .headerImg{
                 width: 100%; 
                 display: block;
                 grid-area: header;
+}
+.fondoIndex{
+    background-image: url(../media/banners/metallicaFondoIndex.jpg);
+    background-size: cover;
+    height: 100vh;
+
+
 }
 
 /* Barra de navegacion */
@@ -180,7 +183,7 @@ main section .fondoNegro{
 }
 .imgHistoria{
             margin: auto;
-            padding: 5px;
+            padding: 25px;
             width: 400px;
             height: 300px;
             opacity: 1;
@@ -287,40 +290,18 @@ main section .fondoNegro{
 
 }
 
-/* Html En vivo */
+/* Html Videos */
 
-.fondoEnVivo{
-    height: 100%;
+.fondoVideo{
+   
     background-image: url(../media/banners/fondoEnvivo1.jpg);
     background-size: cover;
-    
-
+    background-repeat: repeat;
+    background-position: center;
     color: white;
+    height: auto;
+    width: 100%;  
 }
-.grid-container-envivo{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    gap: 20px;
-    padding: 20px;
-  
-}
-.grid-container-envivo img{
-   
-    width: 250px;
-    height: 250px;
-}
-.grid-item-envivo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform .5s;  
-
-}
-.grid-item-envivo:hover {
-    transform: scale(1.5);
-    border: solid gray 2px;
-  }
 
 /* media queris index */
 
