@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <!-- Link a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+  
+
+
     <link rel="stylesheet" href="../estiloCss/estilo.css">
     <link rel="shortcut icon" href="../media/banners/favicon-32x32.png" type="image/x-icon">
 
@@ -72,17 +81,35 @@
 
 <main>
 
-<p class="parrafoMiembros">
-1. Los lobos del poder asedian en tu puerta. Escúchalos como acechan. Pronto complacerás su apetito. – And Justice For All </p>
-<p class="parrafoMiembros">2. Hay un diablo recostado a tu lado. Puedes pensar que está dormido. Pero échale un vistazo a sus ojos. – Lover Man</p>
-<p class="parrafoMiembros"> 
+<section class="fondoFrases">
 
-    <img src="../media/Frases/Nothing else matters.jpg" alt="La vida es nuestra, la vivimos a nuestra manera">
+
+<div class= "wow animate__animated animate__flipInX">
+<img class="imgFrases" src="../media/Frases/frases1.jpg" alt="La vida es nuestra, la vivimos a nuestra manera">
+</div>
+
+
+
+<div class="wow animate__animated animate__rotateInDownLeft">
+  <img class="imgFrases" src="../media/Frases/frases2.jpg" alt="Trato de llegar a ti, a mi manera especial, mientras las barreras se derrumban al final del dia">
+</div>
+
+<div class="wow animate__animated animate__rotateIn">
+    <img class="imgFrases" src="../media/Frases/frases3.jpg" alt="Hay un diablo recostado a tu lado, puedes pensar que esta dormido,pero echale un vistazo a sus ojos">
+  </div>
+
+  <div class="wow animate__animated animate__zoomInUp">
+    <img class="imgFrases" src="../media/Frases/frases4.jpg" alt="Nunca grabaremos un videoclip">  
+  </div>
+
+
+</section>
+
 
 </main>
 
 
-<footer class="footerIndex">
+<footer>
 
       
   <!-- Grid container -->
@@ -124,5 +151,12 @@
 
      <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
 </body>
 </html>

@@ -39,6 +39,7 @@ footer{
     justify-content: space-evenly;
     background-color: white;
     text-align: center;
+   
     
 }
 
@@ -50,6 +51,8 @@ footer{
 .fondoIndex{
     background-image: url(../media/banners/metallicaFondoIndex.jpg);
     background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100vh;
 
 
@@ -303,6 +306,29 @@ main section .fondoNegro{
     width: 100%;  
 }
 
+/* Htmlo Frases */
+
+.fondoFrases{
+    background-image: url(../media/banners/fondoFrases.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+  
+}
+.imgFrases{
+    display: flex;
+    margin: auto;
+    padding: 20px;   
+    width: 350px;
+    height: auto;
+}
+
+
+
+
+
 /* media queris index */
 
 /* max-width: 576px */
@@ -318,18 +344,16 @@ main section .fondoNegro{
             "main"
             "footer";
             justify-content: end;
-           
+            height: 100%;
        
     }
     .headerImg{
                height: auto;
     }
     
-     main {
+     main .fondoIndex {
      
-     background-image: url(../media/banners/metallicaFondoIndex.jpg);
-     width: 100%;
-     background-position: center;
+     width: auto;
      background-size: cover;
      
     }
@@ -344,6 +368,11 @@ main section .fondoNegro{
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
+    }
+
+    .videosOficial{
+        display: block;
+
     }
     
     }
