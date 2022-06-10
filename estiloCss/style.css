@@ -1,0 +1,177 @@
+header {
+  grid-area: header;
+  align-items: center;
+  width: 100%; }
+  header .headerImg {
+    width: 100%;
+    display: block;
+    grid-area: header; }
+  header .container-fluid {
+    padding: 0 !important; }
+  header .navbar-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, black, #423f3f, black);
+    display: flex;
+    justify-content: space-evenly; }
+  header .nav-item a {
+    text-decoration: none;
+    display: block;
+    color: white; }
+    header .nav-item a:hover {
+      color: red;
+      background-image: linear-gradient(to bottom, black, #423f3f, black);
+      display: block; }
+  header ul li:hover ul {
+    background-color: black;
+    display: block; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: white;
+  text-align: center; }
+
+.fondoIndex {
+  background-image: url(../media/banners/metallicaFondoIndex.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; }
+  .fondoIndex .musica {
+    width: 80%;
+    height: 80; }
+
+.fondoNegro {
+  height: 100%;
+  width: 100%;
+  background-image: url(../media/banners/blackalbum.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  color: white; }
+  .fondoNegro .titulo {
+    text-align: center;
+    padding: 10px;
+    color: red; }
+  .fondoNegro .subtitulo {
+    margin: 0px;
+    padding: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center; }
+  .fondoNegro .parrafos {
+    color: white;
+    margin: 5px;
+    word-spacing: 2px;
+    text-align: center; }
+  .fondoNegro .imgHistoria {
+    margin: auto;
+    padding: 25px;
+    width: 400px;
+    height: 300px;
+    opacity: 1;
+    display: block; }
+
+.parrafoMiembros {
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic; }
+
+.imgMiembros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; }
+  .imgMiembros .miembrosJpg {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    opacity: .4;
+    transition: transform .5s; }
+    .imgMiembros .miembrosJpg:hover {
+      transform: scale(1.5);
+      opacity: 1;
+      border: solid white 2px; }
+
+.mainDiscografia {
+  background-image: url(../media/banners/fondoDiscografia.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+
+.setlist {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .setlist .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    overflow-x: hidden;
+    transition: all 0.25s; }
+    .setlist .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px white; }
+    .setlist .card img {
+      width: 330px;
+      height: 220px; }
+
+.fondoBanda {
+  background-image: url(../media/banners/fondoBanda3.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+  color: white;
+  text-align: center;
+  padding: 20px; }
+
+.animate__fadeInDown {
+  font-weight: 700; }
+
+.containerFotoBanda {
+  margin: auto;
+  padding: 20px; }
+  .containerFotoBanda .carousel-inner img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+    width: 100%;
+    height: 400px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  display: grid;
+  grid-template-areas: "header " "navBar" "main" "footer"; }
+
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%; }

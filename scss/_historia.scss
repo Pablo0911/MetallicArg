@@ -1,0 +1,41 @@
+
+
+.fondoNegro{
+    height: 100%;
+    width: 100%;
+    background-image: url(../media/banners/blackalbum.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    color: white;
+        .titulo{
+            text-align: center;
+            padding: 10px;
+            color: $tituloColor;
+            }
+            .subtitulo{
+                margin:0px;
+                padding: 1rem;
+                font-weight:400;
+                font-style: $subtituloEstilo;
+                text-align: center;
+     
+     }
+            .parrafos{
+               color: white;
+               margin: 5px;
+               word-spacing: 2px;
+               text-align: center;
+               
+    
+     }
+             .imgHistoria{
+                margin: auto;
+                padding: 25px;
+                width: 400px;
+                height: 300px;
+                opacity: 1;
+                display: block;
+                }
+    }
+

@@ -1,0 +1,39 @@
+$tituloColor: red;
+$subtituloEstilo: italic;
+
+
+@import "header";
+@import "footer";
+@import "_index";
+@import "_historia";
+@import "_miembros";
+@import "_discografia";
+@import "_banda";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif ;
+
+}
+
+body{ 
+   
+     display: grid;
+     grid-template-areas: 
+     "header "
+     "navBar"
+     "main"
+     "footer";
+}
+
+main{
+    grid-area: main;
+    height: auto;
+    width: 100%;   
+}
+
+
+
+
