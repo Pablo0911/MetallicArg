@@ -1,3 +1,5 @@
+/* Variables */
+/* Header */
 header {
   grid-area: header;
   align-items: center;
@@ -30,15 +32,7 @@ header {
     background-color: black;
     display: block; }
 
-footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  background-color: white;
-  text-align: center; }
-
+/* Index */
 .fondoIndex {
   background-image: url(../media/banners/metallicaFondoIndex.jpg);
   background-size: cover;
@@ -49,6 +43,7 @@ footer {
     width: 80%;
     height: 80; }
 
+/* Historia */
 .fondoNegro {
   height: 100%;
   width: 100%;
@@ -58,9 +53,9 @@ footer {
   background-size: auto;
   color: white; }
   .fondoNegro .titulo {
-    text-align: center;
     padding: 10px;
-    color: red; }
+    font-weight: 700;
+    text-align: center; }
   .fondoNegro .subtitulo {
     margin: 0px;
     padding: 1rem;
@@ -68,8 +63,9 @@ footer {
     font-style: italic;
     text-align: center; }
   .fondoNegro .parrafos {
-    color: white;
     margin: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
     word-spacing: 2px;
     text-align: center; }
   .fondoNegro .imgHistoria {
@@ -80,9 +76,11 @@ footer {
     opacity: 1;
     display: block; }
 
-.parrafoMiembros {
+/* Miembros */
+.parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
   margin: 1rem;
   padding: 1rem;
+  font-family: "Roboto", sans-serif;
   font-style: italic; }
 
 .imgMiembros {
@@ -102,6 +100,31 @@ footer {
       opacity: 1;
       border: solid white 2px; }
 
+/* Extends */
+.parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  text-align: center; }
+
+.parrafoMiembros_1 {
+  background-color: #1a1919; }
+
+.parrafoMiembros_2 {
+  background-color: #282626; }
+
+.parrafoMiembros_3 {
+  background-color: #454141; }
+
+.parrafoMiembros_4 {
+  background-color: #666060; }
+
+.parrafoMiembros_5 {
+  background-color: #8c8383; }
+
+/* Discografia */
 .mainDiscografia {
   background-image: url(../media/banners/fondoDiscografia.jpg);
   background-position: center;
@@ -130,10 +153,11 @@ footer {
     .setlist .card:hover {
       transform: translateY(-15px);
       box-shadow: 0 12px 16px white; }
-    .setlist .card img {
+    .setlist .card .imgDiscos {
       width: 330px;
       height: 220px; }
 
+/* Banda */
 .fondoBanda {
   background-image: url(../media/banners/fondoBanda3.jpg);
   width: 100%;
@@ -152,20 +176,113 @@ footer {
 .containerFotoBanda {
   margin: auto;
   padding: 20px; }
-  .containerFotoBanda .carousel-inner img {
+
+.carousel-inner .carousel-item img {
+  padding: 20px;
+  width: 350px;
+  height: 450px; }
+
+/* Video */
+.fondoVideo {
+  background-image: url(../media/banners/fondoEnvivo1.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
+  height: auto;
+  width: 100%; }
+  .fondoVideo .videosOficial .titulo {
+    padding: 10px;
+    text-align: center; }
+    .fondoVideo .videosOficial .titulo .parrafomiembros {
+      margin: 1rem;
+      padding: 1rem;
+      font-style: italic;
+      font-family: "Roboto", sans-serif; }
+
+/* Mixin */
+.parrafoMiembros_A {
+  background-color: #184ff5;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif; }
+
+.parrafoMiembros_B {
+  background-color: #073ecb;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif; }
+
+.parrafoMiembros_C {
+  background-color: #062ba3;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif; }
+
+.parrafoMiembros_D {
+  background-color: #134dd2;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif; }
+
+/* Frases */
+.fondoFrases {
+  background-image: url(../media/banners/fondoFrases.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .fondoFrases .imgFrases {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: auto;
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+    height: auto; }
+
+/* Footer */
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: white;
+  text-align: center; }
+
+/* media queris index */
+/* max-width: 576px */
+@media screen and (max-width: 576px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "navBar" "main" "footer";
+    justify-content: end;
+    height: 100%; }
+  .headerImg {
+    height: auto; }
+  main .fondoIndex {
+    width: auto;
+    background-size: cover; }
+  main .musica {
+    display: none; }
+  .parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
+    text-align: center; }
+  .fondoBanda {
     width: 100%;
-    height: 400px; }
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; }
+  .videosOficial {
+    display: block; } }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 body {
   display: grid;
@@ -175,3 +292,10 @@ main {
   grid-area: main;
   height: auto;
   width: 100%; }
+
+/* Mapas */
+h1 {
+  color: #a5a0a0; }
+
+h2 {
+  color: #7d7575; }

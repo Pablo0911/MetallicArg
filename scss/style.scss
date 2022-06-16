@@ -1,23 +1,30 @@
-$tituloColor: red;
+/* Variables */ 
 $subtituloEstilo: italic;
-
+$fontRoboto: 'Roboto', sans-serif;
+$fontW: 700;
+$bgvideo1: rgb(24, 79, 245);
+$bgvideo2:rgb(7, 62, 203);
+$bgvideo3:rgb(6, 43, 163);
+$bgvideo4:rgb(19, 77, 210);
 
 @import "header";
-@import "footer";
 @import "_index";
 @import "_historia";
 @import "_miembros";
 @import "_discografia";
 @import "_banda";
+@import "_oficial";
+@import "_frases";
+@import "footer";
+@import "mediaquerys";
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif ;
-
+    font-family: $fontRoboto;
 }
-
 body{ 
    
      display: grid;
@@ -34,6 +41,19 @@ main{
     width: 100%;   
 }
 
+/* Mapas */
+$encabezados:(
+    xl:rgb(165, 160, 160),
+    l:rgb(125, 117, 117)
+    );
+$xl: map-get($encabezados, xl );
+$l: map-get($encabezados , l );
 
+h1{
+    color: $xl;
+}
+h2{
+    color: $l;
+}
 
-
+  

@@ -1,0 +1,44 @@
+/* Video */
+
+.fondoVideo{
+    background-image: url(../media/banners/fondoEnvivo1.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    color: white;
+    height: auto;
+    width: 100%;
+    .videosOficial{
+        .titulo{
+            padding: 10px;
+            text-align: center;
+        .parrafomiembros{
+            margin: 1rem;
+            padding: 1rem;
+            font-style: $subtituloEstilo;
+            font-family: $fontRoboto;
+          }
+        } 
+    }
+}
+/* Mixin */
+
+@mixin parrafovideos ($bgvideo) {
+    background-color: $bgvideo;
+    margin: 1rem;
+    padding: 1rem;
+    font-style: $subtituloEstilo;
+    font-family: $fontRoboto;
+}
+.parrafoMiembros_A{
+@include parrafovideos($bgvideo1)
+ }
+ .parrafoMiembros_B{
+    @include parrafovideos($bgvideo2)
+ }
+ .parrafoMiembros_C{
+    @include parrafovideos($bgvideo3)
+ }
+ .parrafoMiembros_D{
+    @include parrafovideos($bgvideo4)
+ }

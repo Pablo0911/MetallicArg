@@ -278,7 +278,7 @@ main section .fondoNegro{
     background-position: center;
     color: white;
     height: auto;
-    width: 100%;  
+    width: 100%; 
 }
 
 /* Html Frases */
@@ -327,11 +327,9 @@ main section .fondoNegro{
     }
     
      main .fondoIndex {
-     
-     width: auto;
-     background-size: cover;
-     
-    }
+                       width: auto;
+                       background-size: cover;
+                    }
     main .musica{
         display: none;
     }

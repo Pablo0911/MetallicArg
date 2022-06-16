@@ -1,0 +1,45 @@
+/* media queris index */
+
+/* max-width: 576px */
+
+@media screen and (max-width:576px) {
+    
+    body { 
+             
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "navBar"
+            "main"
+            "footer";
+            justify-content: end;
+            height: 100%;
+       
+    }
+    .headerImg{
+               height: auto;
+    }
+    
+     main .fondoIndex {
+                       width: auto;
+                       background-size: cover;
+                    }
+    main .musica{
+        display: none;
+    }
+    .parrafoMiembros{
+        text-align: center;
+    }
+    .fondoBanda {
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+  
+    .videosOficial{
+        display: block;
+  
+    }
+    
+    }

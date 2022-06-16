@@ -1,4 +1,4 @@
-
+/* Historia */
 
 .fondoNegro{
     height: 100%;
@@ -9,9 +9,9 @@
     background-size: auto;
     color: white;
         .titulo{
-            text-align: center;
             padding: 10px;
-            color: $tituloColor;
+            font-weight: $fontW;
+            text-align: center;
             }
             .subtitulo{
                 margin:0px;
@@ -19,16 +19,14 @@
                 font-weight:400;
                 font-style: $subtituloEstilo;
                 text-align: center;
-     
-     }
+            }
             .parrafos{
-               color: white;
                margin: 5px;
+               font-family: $fontRoboto;
+               font-style: $subtituloEstilo;
                word-spacing: 2px;
-               text-align: center;
-               
-    
-     }
+               text-align: center;              
+}
              .imgHistoria{
                 margin: auto;
                 padding: 25px;

@@ -1,3 +1,5 @@
+/* Discografia */
+
 .mainDiscografia{
     background-image: url(../media/banners/fondoDiscografia.jpg);
     background-position: center;
@@ -6,7 +8,6 @@
     width: 100%;
     height: auto;
 }
-
 .setlist{
     width: 100%;
     max-width: 1200px;
@@ -16,22 +17,21 @@
     justify-content: center;
     margin: auto;
       .card{
-width: 330px;
-height: 430px;
-border-radius: 8px;
-margin: 20px;
-text-align: center;
-background-color: white;
-overflow-x: hidden;
-transition: all 0.25s;
-       &:hover{
-          transform: translateY(-15px);
-          box-shadow: 0 12px 16px white
-        }
-          img{
-            width: 330px;
-            height: 220px;
-                   }
+           width: 330px;
+           height: 430px;
+           border-radius: 8px;
+           margin: 20px;
+           text-align: center;
+           background-color: white;
+           overflow-x: hidden;
+           transition: all 0.25s;
+            &:hover{
+               transform: translateY(-15px);
+               box-shadow: 0 12px 16px white}
+              .imgDiscos{
+                   width: 330px;
+                    height: 220px;
+                  }
+                }
              }
-
-           }
+        
