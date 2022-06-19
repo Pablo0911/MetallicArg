@@ -21,12 +21,13 @@ header{
             align-items: center;
             background-image: linear-gradient(to bottom, black ,rgb(66, 63, 63), black);
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-evenly;            
         }
         .nav-item {
             a {
                 text-decoration: none;
                 display: block;
+                text-align: center;
                 color: white;
                 &:hover {
                     color: red;

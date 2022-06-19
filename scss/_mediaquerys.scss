@@ -1,9 +1,7 @@
-/* media queris index */
 
-/* max-width: 576px */
+/* min-width: 769px and max-width: 1200px */
 
-@media screen and (max-width:576px) {
-    
+@media (min-width: 769px) and (max-width: 1200px){
     body { 
              
             display: grid;
@@ -14,32 +12,100 @@
             "footer";
             justify-content: end;
             height: 100%;
-       
     }
     .headerImg{
                height: auto;
     }
-    
+    /* Index */
      main .fondoIndex {
                        width: auto;
                        background-size: cover;
                     }
-    main .musica{
-        display: none;
-    }
+    /* Miembros */
     .parrafoMiembros{
         text-align: center;
     }
+    .miembrosJpg{
+        margin: 50px;
+        padding: 1px;
+        width: 200px;
+        height: 200px;}
+    /* Banda */
     .fondoBanda {
         width: 100%;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
     }
-  
-    .videosOficial{
-        display: block;
-  
+    .carousel-inner{ 
+        .carousel-item{
+                img{
+                    padding: 20px;
+                    width: 350px;
+                    height: 550px;
+       }
+  }
+}
+}
+    /* min-width: 480px and max-width: 768px */
+
+    @media (min-width: 480px) and (max-width: 768px){
+    body { 
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "navBar"
+            "main"
+            "footer";
+            justify-content: end;
+            height: 100%;
     }
-    
+    .headerImg{
+               height: auto;
     }
+    /* Index */
+     .fondoIndex {
+                       width: auto;
+                       background-image: url(../media/mobile/index_mobile.jpg);
+                       background-size: cover;
+                    }
+    .musica{
+        display: none;
+    }
+    /* Miembros */
+    .parrafoMiembros{
+        text-align: center;
+    }
+    .miembrosJpg{
+        margin:auto;
+        padding: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    /* Discografia */
+    .setlist{
+             .card{
+             width: 300px;
+             height: 330px;
+    .imgDiscos{
+        width: 290px;
+        height:200px ;
+    }    }
+}
+    /* Banda */
+    .fondoBanda {
+        width: 100%;
+        background-image: url(../media/banners/blackalbum.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .carousel{
+        width: 100% !important;
+    }
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+}
