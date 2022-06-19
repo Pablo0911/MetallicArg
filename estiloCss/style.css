@@ -289,8 +289,8 @@ footer {
     width: 350px;
     height: 550px; } }
 
-/* min-width: 480px and max-width: 768px */
-@media (min-width: 480px) and (max-width: 768px) {
+/* min-width: 380px and max-width: 768px */
+@media (min-width: 380px) and (max-width: 768px) {
   body {
     display: grid;
     grid-template-areas: "header" "navBar" "main" "footer";
