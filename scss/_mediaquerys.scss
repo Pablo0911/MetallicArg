@@ -20,6 +20,10 @@
      main .fondoIndex {
                        width: auto;
                        background-size: cover;
+                       .formulario{
+                        display: flex;
+                        justify-content: start;
+                       }
                     }
     /* Miembros */
     .parrafoMiembros{
@@ -71,6 +75,9 @@
                        background-repeat: no-repeat;                      
                     }
     .musica{
+        display: none;
+    }
+    .formulario{
         display: none;
     }
     /* Miembros */

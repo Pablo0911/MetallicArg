@@ -41,9 +41,20 @@ header {
   width: 100%;
   height: 100vh; }
   .fondoIndex .musica {
-    padding: 15px;
+    margin: auto 20px;
+    padding: 5px;
     width: 80%;
     height: 80; }
+  .fondoIndex .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .fondoIndex .formulario .contenedor_formulario {
+      background-image: linear-gradient(to bottom, black, #423f3f, black);
+      margin: 10px;
+      color: white;
+      border-radius: 15px;
+      text-align: center; }
 
 /* Historia */
 .fondoNegro {
@@ -270,6 +281,9 @@ footer {
   main .fondoIndex {
     width: auto;
     background-size: cover; }
+    main .fondoIndex .formulario {
+      display: flex;
+      justify-content: start; }
   /* Miembros */
   .parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
     text-align: center; }
@@ -305,6 +319,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat; }
   .musica {
+    display: none; }
+  .formulario {
     display: none; }
   /* Miembros */
   .parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {

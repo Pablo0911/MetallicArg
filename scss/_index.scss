@@ -7,8 +7,22 @@
     width: 100%;
     height: 100vh;
         .musica{
-            padding: 15px;
+            margin:auto 20px;
+            padding: 5px;
             width:80%;
-            height: 80;
-        }
+            height: 80;}
+            .formulario{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                
+                .contenedor_formulario{
+                background-image:linear-gradient(to bottom, black ,rgb(66, 63, 63), black);
+                margin: 10px;
+                color: white;                
+                border-radius: 15px;
+                text-align: center;
+                       }
+                    }
+                
     }
