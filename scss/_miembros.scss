@@ -17,6 +17,7 @@
             height: 250px; 
             opacity: .4;
             transition: transform .5s; 
+            cursor: pointer;
                   &:hover{
                   transform: scale(1.5);
                   opacity: 1;

@@ -10,114 +10,88 @@
     <meta name="keywords"  content="Metallica, James Hetfield, papaHet, Lars Ulrich, Kirk Hammet, Rob Trujillo, Thrash metal, Cliff Burton, Black albúm, Metallica Argentina, música, videos, fotos, información">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-      <!-- Estilo CSS -->
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="./estiloCss/style.css">
     <link rel="shortcut icon" href="./media/banners/favicon-32x32.png" type="image/x-icon">
-
     <title>MetallicArg - Fanpage de Metallica🤘</title>
 </head>
 <body>
-      <header>
-        <img class="headerImg" src="./media/banners/banner_general.png" alt="bannerMetallicArg">
-
-                                    <!-- BARRA DE NAVEGACION -->
-
-      <nav class="navbar navbar-expand-md p-0 ">
-
-        <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="./pages/Historia.html">Historia</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miembros</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="./pages/Actuales.html">Actuales</a></li>
-                <li><a class="dropdown-item" href="./pages/Exmiembros.html">Ex miembros</a></li>
-            </ul>
-                </li>
-
-                <li class="nav-item"><a class="nav-link" href="./pages/Discografia.html">Discografia</a></li>
-
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fotos</a>             
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./pages/Banda.html">Banda</a></li>
-            </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videos</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./pages/Oficial.html">Oficial</a></li>
-            </ul>              
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./pages/Frases.html">Frases</a></li>              
-            </ul>
-          </div>
+  <header>
+    <img class="headerImg" src="./media/banners/banner_general.png" alt="bannerMetallicArg">
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-md p-0 ">
+      <div class="container-fluid"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./pages/historia.html">Historia</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Miembros</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./pages/actuales.html">Actuales</a></li>
+                <li><a class="dropdown-item" href="./pages/exmiembros.html">Ex miembros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./pages/discografia.html">Discografia</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/banda.html">Banda</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/videos.html">Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/frases.html">Frases</a></li>
+          </ul>
         </div>
-      </nav>
-      </header>
-
-      <main>
-            <section class="fondoIndex">
-        <div class="musica">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1sJmec?utm_source=generator" width="25%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
-            <div class="formulario">
-              <div class="contenedor_formulario">
-                  <fieldset>
-                      <legend>Suscribete para recibir las ultimas novedades</legend>
-              <form action="">
-                  <div>
-                      <label for="nombre">Completar con el nombre</label>
-                      <input type="text" name="nombre" placeholder="James">
-                  </div>
-                  <div>
-                      <label for="apellido">Completar con el apellido</label>
-                      <input type="text" name="apellido" placeholder="Hetfield">
-                  </div>
-                  <div>
-                      <label for="email">Escribe tu mail</label>
-                      <input type="email" name="email" required>
-                  </div>
-                  <div>
-                    <label for="Acepta">Acepta terminos y condiciones </label>
-                      <input type="checkbox" name="Acepta" value="1">
-                  </div>
-                  <div>
-                      <input type="submit" value="Enviar datos">
-                      <input type="Reset" value="Borrar datos">
-                  </div>
-              </fieldset>
-              </form>
-            </div>
-          </div>
-
-            </section>
-      </main>
-
-      <footer>
-            <!-- Grid container -->
-        <div class="container">
-            <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/Metallica" target="_blank"><img src="./media/banners/social_facebook_fb_35.png" alt="Metallica Facebook"></a>      
-            <!-- Twitter -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/metallica" target="_blank"><img src="./media/banners/social_Twitter_38.png" alt="twitter"></a>      
-            <!-- Instagram -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/metallica/" target="_blank"><img src="./media/banners/instagram_black_logo_icon_147122.png" alt="Instagram"></a>      
-            <!-- YouTube -->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.youtube.com/user/MetallicaTV" target="_blank"><img src="./media/banners/You_tube_icon-icons.com_69028.png" alt="youtube"></a>
-            <!-- Spotify-->
-            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank"><img src="./media/banners/spotify_icon-icons.com_65503.png" alt="Spotify"></a>
-      </footer>
-      
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="fondoIndex">
+      <div class="musica">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1sJmec?utm_source=generator" width="25%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
+      <div class="formulario">
+        <div class="contenedor_formulario">
+          <fieldset>
+            <legend>
+              Suscríbete para recibir novedades
+            </legend>
+            <form action="">
+              <div>
+                <label for="nombre">
+                  Nombre y apellido
+                </label>
+                <input type="text" name="nombre" placeholder="James Hetfield">
+              </div>
+              <div>
+                <label for="email">
+                  Escribe tu mail
+                </label>
+                <input type="email" name="email" required>
+              </div>
+              <div>
+                <input type="submit" value="Enviar datos">
+                <input type="Reset" value="Borrar datos">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Grid container -->
+    <div class="container">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/Metallica" target="_blank"><img src="./media/banners/social_facebook_fb_35.png" alt="Metallica Facebook"></a>
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/metallica" target="_blank"><img src="./media/banners/social_Twitter_38.png" alt="twitter"></a>
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/metallica/" target="_blank"><img src="./media/banners/instagram_black_logo_icon_147122.png" alt="Instagram"></a>      
+    <!-- YouTube -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.youtube.com/user/MetallicaTV" target="_blank"><img src="./media/banners/You_tube_icon-icons.com_69028.png" alt="youtube"></a>
+    <!-- Spotify-->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB" target="_blank"><img src="./media/banners/spotify_icon-icons.com_65503.png" alt="Spotify"></a>
+    </footer>      
     <!-- JavaScript Bundle with Popper -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 </html>

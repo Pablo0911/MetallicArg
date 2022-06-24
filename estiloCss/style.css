@@ -45,16 +45,14 @@ header {
     padding: 5px;
     width: 80%;
     height: 80; }
-  .fondoIndex .formulario {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-    .fondoIndex .formulario .contenedor_formulario {
-      background-image: linear-gradient(to bottom, black, #423f3f, black);
-      margin: 10px;
-      color: white;
-      border-radius: 15px;
-      text-align: center; }
+  .fondoIndex .contenedor_formulario {
+    background-image: linear-gradient(to bottom, #0f0d0d, #423f3f, black);
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    opacity: .8; }
 
 /* Historia */
 .fondoNegro {
@@ -107,7 +105,8 @@ header {
     width: 250px;
     height: 250px;
     opacity: .4;
-    transition: transform .5s; }
+    transition: transform .5s;
+    cursor: pointer; }
     .imgMiembros .miembrosJpg:hover {
       transform: scale(1.5);
       opacity: 1;
@@ -156,14 +155,15 @@ header {
   margin: auto; }
   .setlist .card {
     width: 330px;
-    height: 430px;
+    height: 320px;
     border-radius: 8px;
     margin: 20px;
     text-align: center;
     color: white;
     background-color: black;
     overflow-x: hidden;
-    transition: all 0.25s; }
+    transition: all 0.25s;
+    cursor: pointer; }
     .setlist .card:hover {
       transform: translateY(-15px);
       box-shadow: 0 12px 16px white; }
@@ -268,8 +268,8 @@ footer {
   text-align: center;
   height: 60px; }
 
-/* min-width: 769px and max-width: 1200px */
-@media (min-width: 769px) and (max-width: 1200px) {
+/* min-width: 769px and max-width: 1800px */
+@media (min-width: 769px) and (max-width: 1800px) {
   body {
     display: grid;
     grid-template-areas: "header" "navBar" "main" "footer";
@@ -282,13 +282,17 @@ footer {
     width: auto;
     background-size: cover; }
     main .fondoIndex .formulario {
-      display: flex;
-      justify-content: start; }
+      display: block;
+      position: relative;
+      bottom: 0;
+      width: fit-content;
+      margin: auto;
+      padding-top: 280px; }
   /* Miembros */
   .parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
     text-align: center; }
   .miembrosJpg {
-    margin: 50px;
+    margin: 20px;
     padding: 1px;
     width: 200px;
     height: 200px; }
@@ -318,10 +322,15 @@ footer {
     background-image: url(../media/mobile/index_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat; }
-  .musica {
-    display: none; }
-  .formulario {
-    display: none; }
+    .fondoIndex .musica {
+      display: none; }
+    .fondoIndex .formulario {
+      display: block;
+      position: relative;
+      bottom: 0;
+      margin: auto;
+      padding-top: 330px;
+      width: fit-content; }
   /* Miembros */
   .parrafoMiembros, .parrafoMiembros_1, .parrafoMiembros_2, .parrafoMiembros_3, .parrafoMiembros_4, .parrafoMiembros_5 {
     text-align: center; }

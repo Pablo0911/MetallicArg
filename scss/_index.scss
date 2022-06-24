@@ -10,19 +10,14 @@
             margin:auto 20px;
             padding: 5px;
             width:80%;
-            height: 80;}
-            .formulario{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                
+            height: 80;}            
                 .contenedor_formulario{
-                background-image:linear-gradient(to bottom, black ,rgb(66, 63, 63), black);
+                background-image:linear-gradient(to bottom, rgb(15, 13, 13) ,rgb(66, 63, 63), black);
                 margin: 10px;
+                padding: 5px;
                 color: white;                
                 border-radius: 15px;
                 text-align: center;
-                       }
+                opacity: .8;
+                        }
                     }
-                
-    }

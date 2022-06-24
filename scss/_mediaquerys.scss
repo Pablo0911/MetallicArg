@@ -1,7 +1,7 @@
 
-/* min-width: 769px and max-width: 1200px */
+/* min-width: 769px and max-width: 1800px */
 
-@media (min-width: 769px) and (max-width: 1200px){
+@media (min-width: 769px) and (max-width: 1800px){
     body { 
              
             display: grid;
@@ -21,8 +21,12 @@
                        width: auto;
                        background-size: cover;
                        .formulario{
-                        display: flex;
-                        justify-content: start;
+                        display: block;
+                        position: relative;
+                        bottom: 0;
+                        width: fit-content;
+                        margin: auto;
+                        padding-top: 280px;
                        }
                     }
     /* Miembros */
@@ -30,7 +34,7 @@
         text-align: center;
     }
     .miembrosJpg{
-        margin: 50px;
+        margin: 20px;
         padding: 1px;
         width: 200px;
         height: 200px;}
@@ -72,14 +76,20 @@
                        width: 100%;
                        background-image: url(../media/mobile/index_mobile.jpg);
                        background-size: cover;
-                       background-repeat: no-repeat;                      
-                    }
-    .musica{
-        display: none;
-    }
-    .formulario{
-        display: none;
-    }
+                       background-repeat: no-repeat;
+                       .musica{
+                        display: none;
+                       }                      
+                        .formulario{
+                        display: block;
+                        position: relative;
+                        bottom: 0;
+                        margin: auto;
+                        padding-top: 330px;
+                        width: fit-content;
+                            }
+                        }
+                    
     /* Miembros */
     .parrafoMiembros{
         text-align: center;
