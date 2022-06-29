@@ -8,32 +8,32 @@
     background-attachment: fixed;
     background-size: auto;
     color: white;
-        .titulo{
-            padding: 10px;
-            font-weight: $fontW;
-            text-align: center;
-            }
-            .subtitulo{
-                margin:0px;
-                padding: 1rem;
-                font-weight:400;
-                font-style: $subtituloEstilo;
-                text-align: center;
-            }
-            .parrafos{
-               margin: 5px;
-               font-family: $fontRoboto;
-               font-style: $subtituloEstilo;
-               word-spacing: 2px;
-               text-align: center;              
-}
-             .imgHistoria{
-                margin: auto;
-                padding: 25px;
-                width: 400px;
-                height: 300px;
-                opacity: 1;
-                display: block;
-                }
+    .titulo{
+        padding: 10px;
+        font-weight: $fontW;
+        text-align: center;
     }
+    .subtitulo{
+        margin:0px;
+        padding: 1rem;
+        font-weight:400;
+        font-style: $subtituloEstilo;
+        text-align: center;
+    }
+    .parrafos{
+        margin: 5px;
+        font-family: $fontRoboto;
+        font-style: $subtituloEstilo;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    .imgHistoria{
+        margin: auto;
+        padding: 25px;
+        width: 400px;
+        height: 300px;
+        opacity: 1;
+        display: block;
+    }
+}
 

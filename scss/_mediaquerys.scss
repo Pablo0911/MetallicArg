@@ -2,33 +2,30 @@
 /* min-width: 769px and max-width: 1800px */
 
 @media (min-width: 769px) and (max-width: 1800px){
-    body { 
-             
-            display: grid;
-            grid-template-areas: 
-            "header"
-            "navBar"
-            "main"
-            "footer";
-            justify-content: end;
-            height: 100%;
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "navBar"
+        "main"
+        "footer";
     }
-    .headerImg{
-               height: auto;
+    .headerImg {
+        height: auto;
     }
     /* Index */
-     main .fondoIndex {
-                       width: auto;
-                       background-size: cover;
-                       .formulario{
-                        display: block;
-                        position: relative;
-                        bottom: 0;
-                        width: fit-content;
-                        margin: auto;
-                        padding-top: 280px;
-                       }
-                    }
+    main .fondoIndex {
+        width: auto;
+        background-size: cover;
+        .formulario{
+            display: block;
+            position: relative;
+            bottom: 0;
+            width: fit-content;
+            margin: auto;
+            padding-top: 280px;
+        }
+    }
     /* Miembros */
     .parrafoMiembros{
         text-align: center;
@@ -51,45 +48,42 @@
                     padding: 20px;
                     width: 350px;
                     height: 550px;
-       }
-  }
-}
-}
+                }
+            }
+        }
+    }
     /* min-width: 380px and max-width: 768px */
 
     @media (min-width: 380px) and (max-width: 768px){
-    body { 
-            display: grid;
-            grid-template-areas: 
-            "header"
-            "navBar"
-            "main"
-            "footer";
-            justify-content: end;
-            height: 100%;
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "navBar"
+        "main"
+        "footer";
     }
     .headerImg{
-               height: auto;
+        height: auto;
     }
     /* Index */
-     .fondoIndex {
-                       width: 100%;
-                       background-image: url(../media/mobile/index_mobile.jpg);
-                       background-size: cover;
-                       background-repeat: no-repeat;
-                       .musica{
-                        display: none;
-                       }                      
-                        .formulario{
-                        display: block;
-                        position: relative;
-                        bottom: 0;
-                        margin: auto;
-                        padding-top: 330px;
-                        width: fit-content;
-                            }
-                        }
-                    
+    .fondoIndex {
+        width: 100%;
+        background-image: url(../media/mobile/index_mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .musica{
+            display: none;
+        }
+        .formulario{
+            display: block;
+            position: relative;
+            bottom: 0;
+            margin: auto;
+            padding-top: 380px;
+            width: fit-content;
+        }
+    }                    
     /* Miembros */
     .parrafoMiembros{
         text-align: center;
@@ -102,9 +96,9 @@
     }
     /* Discografia */
     .setlist{
-             .card{
-             width: 300px;
-             height: 330px;
+        .card{
+            width: 300px;
+            height: min-content;
     .imgDiscos{
         width: 290px;
         height:200px ;

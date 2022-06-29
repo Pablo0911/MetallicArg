@@ -2,11 +2,11 @@
 $subtituloEstilo: italic;
 $fontRoboto: 'Roboto', sans-serif;
 $fontW: 700;
-$bgvideo1: rgb(24, 79, 245);
-$bgvideo2:rgb(7, 62, 203);
-$bgvideo3:rgb(6, 43, 163);
-$bgvideo4:rgb(19, 77, 210);
-
+$bgvideo1: rgb(26, 25, 25);
+$bgvideo2:rgb(40, 38, 38);
+$bgvideo3:rgb(69, 65, 65);
+$bgvideo4:rgb(102, 96, 96);
+/* Partials */
 @import "header";
 @import "_index";
 @import "_historia";
@@ -17,29 +17,6 @@ $bgvideo4:rgb(19, 77, 210);
 @import "_frases";
 @import "footer";
 @import "mediaquerys";
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $fontRoboto;
-}
-body{ 
-   
-     display: grid;
-     grid-template-areas: 
-     "header "
-     "navBar"
-     "main"
-     "footer";
-}
-main{
-    grid-area: main;
-    height: auto;
-    width: 100%;   
-}
-
 /* Mapas */
 $encabezados:(
     xl:rgb(165, 160, 160),
@@ -53,4 +30,24 @@ h1{
 }
 h2{
     color: $l;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontRoboto;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header "
+    "navBar"
+    "main"
+    "footer";
+}
+main{
+    grid-area: main;
+    height: auto;
+    width: 100%;   
 }

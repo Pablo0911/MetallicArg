@@ -1,10 +1,7 @@
 /* Video */
 
-.fondoVideo{
-    background-image: url(../media/banners/fondoEnvivo1.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
+.fondoVideo{    
+    background: radial-gradient(black ,rgb(66, 63, 63), black);
     color: white;
     height: auto;
     width: 100%;
@@ -17,9 +14,9 @@
             padding: 1rem;
             font-style: $subtituloEstilo;
             font-family: $fontRoboto;
-          }
-        } 
+        }
     }
+}
 }
 /* Mixin */
 
@@ -27,18 +24,20 @@
     background-color: $bgvideo;
     margin: 1rem;
     padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
     font-style: $subtituloEstilo;
     font-family: $fontRoboto;
 }
 .parrafoMiembros_A{
 @include parrafovideos($bgvideo1)
- }
- .parrafoMiembros_B{
+}
+.parrafoMiembros_B{
     @include parrafovideos($bgvideo2)
- }
- .parrafoMiembros_C{
+}
+.parrafoMiembros_C{
     @include parrafovideos($bgvideo3)
- }
- .parrafoMiembros_D{
+}
+.parrafoMiembros_D{
     @include parrafovideos($bgvideo4)
- }
+}
